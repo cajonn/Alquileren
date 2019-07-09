@@ -93,11 +93,7 @@ namespace AzureMLRRSWebTemplate
                         var param = paramObj.listInputParameter[i];
                         param.Alias = ((TextBox)FindControl(string.Format("input_alias_{0}_{1}_{2}", inputPost, param.Name,param.Group))).Text;
                         param.Description = ((TextBox)FindControl(string.Format("input_description_{0}_{1}_{2}", inputPost, param.Name,param.Group))).Text;
-                        if (param.Type == "integer" || param.Type == "number")
-                        {
-                            param.MinValue = ((TextBox)FindControl(string.Format("input_min_{0}_{1}_{2}", inputPost, param.Name,param.Group))).Text;
-                            param.MaxValue = ((TextBox)FindControl(string.Format("input_max_{0}_{1}_{2}", inputPost, param.Name,param.Group))).Text;
-                        }
+                        
 
                         if (param.StrEnum != null && param.StrEnum.Count > 0)
                         {
@@ -118,12 +114,7 @@ namespace AzureMLRRSWebTemplate
                         var param = paramObj.listGlobalParameter[i];
                         param.Alias = ((TextBox)FindControl(string.Format("input{0}_alias_{1}", i, globalPost))).Text;
                         param.Description = ((TextBox)FindControl(string.Format("input{0}_description_{1}", i, globalPost))).Text;
-                        if (param.Type == "integer" || param.Type == "number")
-                        {
-                            param.MinValue = ((TextBox)FindControl(string.Format("input{0}_min_{1}", i, globalPost))).Text;
-                            param.MaxValue = ((TextBox)FindControl(string.Format("input{0}_max_{1}", i, globalPost))).Text;
-                        }
-
+                     
                         if (param.StrEnum != null && param.StrEnum.Count > 0)
                         {
                             param.DefaultValue = ((DropDownList)FindControl(string.Format("input{0}_default_{1}", i, globalPost))).SelectedValue;
