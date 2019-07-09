@@ -49,10 +49,10 @@
 
 <!-- Header -->
 <div class="container azue-header" >  
-    <div class="jumbotron" style="background-image:url('Resources/azure-ml.png');height:126px; position:relative;padding-top: 10px;">
+    <div class="jumbotron" style="background-image:url('Resources/azure-ml.png');height:100px; position:relative;padding-top: 5px;">
         <a href="/"><div class="wheel"><wheel></wheel></div></a>
-        <div style="padding-left: 110px;">
-            <div style="max-height:110px;overflow-y:hidden">                
+        <div style="padding-left: 100px;">
+            <div style="max-height:100px;overflow-y:hidden">                
                 <h3 class="text-muted"><asp:Label ID="lblDes" runat="server" Text="Web App Configuration"></asp:Label></h3>
                 <h4 class="text-muted"><asp:Label ID="lblTitle" runat="server" Text=""></asp:Label></h4>
             </div>
@@ -108,7 +108,7 @@
     <div class="modal-dialog">
     
       <div class="modal-content">        
-        <div class="modal-body jumbotron" style="padding: 20px;">
+        <div class="modal-body jumbotron" style="padding: 10px;">
           <p>Please enter the API Key to access the Setting page!</p>
             <asp:TextBox ID="txtKeyInput" runat="server" CssClass="form-control" TextMode="MultiLine"></asp:TextBox>
         </div>
